@@ -2,6 +2,7 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
+  darkMode: "class",
   mode: "jit",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -14,6 +15,10 @@ module.exports = {
         bgSidebar: "#F4F5F7",
         titleColor: "#BD945A",
       },
+      backgroundImage: (theme) => ({
+        ysosb: "url('./images/y-so-serious.png')",
+        ysosw: "url('./images/y-so-serious-white.png')",
+      }),
     },
   },
   plugins: [

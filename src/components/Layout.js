@@ -1,15 +1,16 @@
 import React from "react";
-import Footer from "./Footer/Footer";
-import Navbar from "./Navbar/Navbar";
-import NavItem from "./Navbar/NavItem";
+import Footer from "./Footer";
+import Header from "./Header";
 
 const Layouts = ({ children }) => {
   return (
-    <>
-      <Navbar />
-      {children}
-      <Footer />
-    </>
+    <div className=" bg-white dark:bg-black text-black dark:text-white">
+      <div className="container mx-auto">
+        <Header />
+        {children}
+        <Footer />
+      </div>
+    </div>
   );
 };
 

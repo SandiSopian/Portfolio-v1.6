@@ -4,7 +4,7 @@ import React from "react";
 const NavItem = () => {
   return (
     <nav>
-      <ul>
+      <ul className="flex gap-8">
         <li>
           <Link to="/">Home</Link>
         </li>
