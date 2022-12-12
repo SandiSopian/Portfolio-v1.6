@@ -11,21 +11,23 @@ module.exports = {
         sans: ["Raleway", "ui-sans-serif", "system-ui"],
       },
       colors: {
-        bgDefault: "#F1F6FF",
-        bgSidebar: "#F4F5F7",
-        titleColor: "#BD945A",
+        itemColor: "#262626",
+        nameColor: "#2978b5",
       },
       backgroundImage: (theme) => ({
-        ysosb: "url('./images/y-so-serious.png')",
-        ysosw: "url('./images/y-so-serious-white.png')",
+        bghomed: "url('/src/assets/bg-home-darkmode.jpg')",
+        bghomew: "url('/src/assets/bg-home-lightmode.jpg')",
+        wave1: "url('/src/assets/Vector1.png')",
+        wave2: "url('/src/assets/Vector2.png')",
+        wave3: "url('/src/assets/Vector3.png')",
       }),
     },
   },
   plugins: [
     plugin(function ({ addUtilities }) {
       const utilities = {
-        ".bg-img": {
-          "background-image": "url(/src/assets/home-img1.jpg)",
+        ".wave1": {
+          "background-image": "url(/src/assets/wave1.svg)",
         },
         ".active": {
           fontWeight: "bold",
