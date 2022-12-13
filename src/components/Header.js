@@ -7,17 +7,19 @@ const Header = () => {
   if (!header.email) return null;
 
   return (
-    <header className="flex items-center pt-12 sticky">
-      <h3 className="w-2/12 font-extrabold text-2xl ml-16 text-nameColor">{homepage ? <a href={homepage}>{title}</a> : title}</h3>
+    <header id="header" className="flex items-center pt-12 sticky">
+      <h3 className=" font-extrabold text-2xl ml-16 hover-l-animation dark:hover-d-animation w-min-content">{homepage ? <a href={homepage}>{title}</a> : title}</h3>
 
-      <div className="w-8/12 flex justify-center font-bold uppercase">
+      <div className="w-8/12 ml-36 flex justify-center font-bold uppercase ">
         <Navbar />
       </div>
 
-      <a href={`mailto:${header.email}`} className="w-2/12">
-        <span type="button" className="py-3 px-12 font-bold uppercase border rounded-lg text-black dark:text-white hover:text-white dark:md:hover:text-white hover:bg-[#E0B20F] dark:md:hover:text-[#E0B20F] border-[#E0B20F]">
-          Hire Me
-        </span>
+      <a href={`mailto:${header.email}`}>
+        <div className="hover-l-button1 dark:hover-d-button1">
+          <div type="button" className="py-3 px-12 font-bold uppercase border dark:border-2 rounded-lg text-black dark:text-white hover:text-white dark:md:hover:text-black border-primaryColor dark:border-secondaryColor">
+            Hire Me
+          </div>
+        </div>
       </a>
     </header>
   );

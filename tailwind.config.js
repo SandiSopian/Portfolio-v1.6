@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   darkMode: "class",
@@ -12,7 +11,8 @@ module.exports = {
       },
       colors: {
         itemColor: "#262626",
-        nameColor: "#2978b5",
+        primaryColor: "#2978b5",
+        secondaryColor: "#90a0d9",
       },
       backgroundImage: (theme) => ({
         bghomed: "url('/src/assets/bg-home-darkmode.jpg')",
@@ -23,20 +23,5 @@ module.exports = {
       }),
     },
   },
-  plugins: [
-    plugin(function ({ addUtilities }) {
-      const utilities = {
-        ".wave1": {
-          "background-image": "url(/src/assets/wave1.svg)",
-        },
-        ".active": {
-          fontWeight: "bold",
-          transitionTimingFunction: "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
-          transitionDuration: "75ms",
-        },
-      };
-
-      addUtilities(utilities);
-    }),
-  ],
+  plugins: [],
 };
