@@ -6,8 +6,8 @@ const About = () => {
   const { name, role, country, phone, email, longDescription, profile } = about;
   return (
     <Layout>
-      <section className="container mx-auto flex overflow-hidden mt-12">
-        <div className="w-7/12">
+      <section className="container flex mx-24 overflow-hidden mt-12">
+        <div className="w-6/12">
           {name && <h2 className="font-bold text-5xl my-16">{name}</h2>}
 
           {role && (
@@ -27,7 +27,7 @@ const About = () => {
           {longDescription && <p className="w-[600px] break-word">{longDescription}</p>}
         </div>
 
-        <div className="w-7/12">{profile && <img src={profile} alt="" className="rounded-b-3xl" />}</div>
+        <div className="w-6/12">{profile && <img src={profile} alt="" className="w-[90%] rounded-bl-3xl rounded-tl-3xl" />}</div>
       </section>
     </Layout>
   );

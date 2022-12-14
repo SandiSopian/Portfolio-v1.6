@@ -42,4 +42,8 @@
   .card-animation {
     @apply transition duration-150 ease-in-out shadow-md transform hover:-translate-y-1 hover:cursor-pointer;
   }
+
+  .portfolioCard-animation {
+    @apply flex flex-col justify-center text-center items-center opacity-0 group-hover:opacity-100 absolute inset-0 text-xl border-2 border-[#2978b5] dark:border-[#90a0d9] bg-white dark:bg-[#262626] text-black dark:text-white font-semibold transition duration-1000 ease-in-out rounded-3xl;
+  }
 }

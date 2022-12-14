@@ -3,14 +3,14 @@ import ProjImg2 from "../src/assets/project2.jpg";
 import ProjImg3 from "../src/assets/project3.jpg";
 import ProfileImg from "../src/assets/profile.jpg";
 
-// Header Assets
+// Header
 export const header = {
   homepage: "http://sandiss1.skom.id/",
   title: "SS.",
   email: "sandis17@outlook.com",
 };
 
-// Home | About Assets
+// Home | About
 export const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Sandi Sopian",
@@ -35,36 +35,41 @@ export const about = {
 // Skills
 export const skills = ["HTML", "CSS", "SASS", "JavaScript", "TypeScript", "React", "Next", "Bootstrap", "TailwindCSS", "Material UI", "Git", "Figma", "Canva", "Adobe"];
 
-// Porfolio
+// Portfolio
 export const portfolio = [
   {
-    name: "Landing Page",
+    title: "Landing Page",
     description: "I'm build simple Landing Pages for selling meats of cow and chickens",
     image: ProjImg1,
     url: "",
   },
   {
-    name: "Landing Page",
+    title: "Landing Page",
     description: "I'm build simple Landing Pages for selling meats of cow and chickens",
     image: ProjImg2,
     url: "",
   },
   {
-    name: "Landing Page",
+    title: "Landing Page",
     description: "I'm build simple Landing Pages for selling meats of cow and chickens",
     image: ProjImg3,
     url: "",
   },
   {
-    name: "Landing Page",
+    title: "Landing Page",
     description: "I'm build simple Landing Pages for selling meats of cow and chickens",
     image: ProjImg3,
     url: "",
   },
   {
-    name: "Landing Page",
+    title: "Landing Page",
     description: "I'm build simple Landing Pages for selling meats of cow and chickens",
     image: ProjImg3,
     url: "",
   },
 ];
+
+// Pricing
+export const pricing = {
+  email: "sandis17@outlook.com",
+};

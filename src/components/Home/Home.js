@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <Layout>
       {/* Section Home */}
-      <section id="home" className="flex flex-col items-center text-center -mt-24 leading-loose bg-bghomew dark:bg-bghomed bg-cover pb-96">
-        <div className="container mx-auto overflow-hidden">
+      <section id="home" className="flex flex-col items-center text-center -mt-28 leading-loose bg-bghomew dark:bg-bghomed bg-cover pb-96">
+        <div className="container mx-auto mt-10 overflow-hidden">
           {/* Name */}
           {name && (
             <h1 className="text-6xl font-bold mt-40">
@@ -39,27 +39,27 @@ const Home = () => {
       </section>
 
       {/* Service section on Home */}
-      <section id="service" className="flex flex-col items-center text-center -mt-40">
+      <section id="service" className="container mx-auto flex flex-col items-center text-center -mt-40">
         <Service />
       </section>
 
       {/* Skills section on Home */}
-      <section id="skills" className="mt-24">
+      <section id="skills" className="container mx-auto mt-24">
         <Skills />
       </section>
 
       {/* Portfolio section on Home */}
-      <section id="portfolio" className="mt-24">
+      <section id="portfolio" className="container mx-auto px-10 mt-60">
         <Portfolio />
       </section>
 
       {/* Pricing section on Home */}
-      <section id="pricing">
+      <section id="pricing" className="container mx-auto px-10 mt-60">
         <Pricing />
       </section>
 
       {/* Get in touch button on Home */}
-      <div className="flex flex-col gap-4 items-center text-center my-48 sticky">
+      <div className="flex flex-col gap-4 items-center text-center mt-48 mb-38 sticky">
         <a href="">
           <div className="hover-l-button2 dark:hover-d-button2">
             <div type="button" className="py-12 px-20 border dark:border-4 border-primaryColor dark:border-secondaryColor font-bold text-3xl uppercase text-primaryColor hover:text-white dark:text-white dark:md:hover:text-black">
