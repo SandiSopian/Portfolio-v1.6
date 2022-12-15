@@ -7,7 +7,7 @@ import ProfileImg from "../src/assets/profile.jpg";
 export const header = {
   homepage: "http://sandiss1.skom.id/",
   title: "SS.",
-  email: "sandis17@outlook.com",
+  email: "sandis1@yahoo.com",
 };
 
 // Home | About
@@ -17,7 +17,7 @@ export const about = {
   role: "Front End Engineer",
   country: "Indonesia",
   phone: "+6282118338039",
-  email: "sandis17@outlook.com",
+  email: "sandis1@yahoo.com",
   profile: ProfileImg,
   description: "I'm work for developing, plan, UI/UX design, build, and implement the user interface systems of websites, software programs, and web-based applications.",
   longDescription:
@@ -26,7 +26,7 @@ export const about = {
   social: {
     linkedin: "https://www.linkedin.com/in/sandi-sopian-007623227/",
     github: "https://github.com/SandiSopian",
-    language: "https://nakamapedia.blogspot.com/",
+    website: "https://nakamapedia.blogspot.com/",
     behance: "https://www.behance.net/sandisopian",
     medium: "https://medium.com/@sandis1",
   },
@@ -71,5 +71,5 @@ export const portfolio = [
 
 // Pricing
 export const pricing = {
-  email: "sandis17@outlook.com",
+  email: "sandis1@yahoo.com",
 };

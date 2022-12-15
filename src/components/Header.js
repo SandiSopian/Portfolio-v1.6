@@ -7,10 +7,10 @@ const Header = () => {
   if (!header.email) return null;
 
   return (
-    <header id="header" className="flex items-center pt-8 mx-24 sticky">
+    <header id="header" className="flex justify-evenly items-center pt-8 container mx-auto sticky">
       <h3 className=" font-extrabold text-2xl ml-16 hover-l-animation dark:hover-d-animation w-min-content">{homepage ? <a href={homepage}>{title}</a> : title}</h3>
 
-      <div className="w-8/12 ml-36 flex justify-center font-bold uppercase ">
+      <div className="ml-36 flex justify-center font-bold uppercase ">
         <Navbar />
       </div>
 
