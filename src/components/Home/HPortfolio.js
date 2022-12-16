@@ -3,6 +3,7 @@ import uniqid from "uniqid";
 import { portfolio, about } from "../../database";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { Fade, Zoom } from "react-reveal";
 
 const Portfolio = () => {
   const { email } = about;
@@ -11,35 +12,42 @@ const Portfolio = () => {
   return (
     <div className="flex items-center justify-center flex-col dark:text-white">
       {/* Portfolio Title */}
-      <h2 className="font-bold text-4xl my-3">PORTFOLIO</h2>
-      <h6>
-        Here are a few past design projects I've worked on. Want to see more?
-        <span className="hover:font-bold">{email && <a href={`mailto:${email}`}>Email me.</a>}</span>
-      </h6>
+      <Zoom left cascade>
+        <h2 className="font-bold text-4xl my-3">PORTFOLIO</h2>
+      </Zoom>
+
+      <Zoom>
+        <h6>
+          Here are a few past design projects I've worked on. Want to see more?
+          <span className="hover:font-bold">{email && <a href={`mailto:${email}`}>Email me.</a>}</span>
+        </h6>
+      </Zoom>
 
       {/* Portfolio Card */}
       <div className="flex gap-4 mt-10">
         {portfolio.map((project, index) => {
           if (index < 3) {
             return (
-              <div key={uniqid()} className="relative group">
-                <img src={project.image} className="rounded-3xl" />
-                <div className="portfolioCard-animation delay-450">
-                  <div className="sticky">
-                    <div className="mb-10 w-[350px]">{project.description}</div>
-                    <a href={project.url}>
-                      <div className="hover-l-button1 dark:hover-d-button1">
-                        <div className="border-2 border-primaryColor dark:border-secondaryColor text-black hover:text-white dark:text-white dark:md:hover:text-black  rounded-lg py-4 ">
-                          Visit Website
-                          <span>
-                            <FontAwesomeIcon icon={faAngleRight} className="ml-2" />
-                          </span>
+              <Fade>
+                <div key={uniqid()} className="relative group">
+                  <img src={project.image} className="rounded-3xl" />
+                  <div className="portfolioCard-animation delay-450">
+                    <div className="sticky">
+                      <div className="mb-10 w-[350px]">{project.description}</div>
+                      <a href={project.url}>
+                        <div className="hover-l-button1 dark:hover-d-button1">
+                          <div className="border-2 border-primaryColor dark:border-secondaryColor text-black hover:text-white dark:text-white dark:md:hover:text-black  rounded-lg py-4 ">
+                            Visit Website
+                            <span>
+                              <FontAwesomeIcon icon={faAngleRight} className="ml-2" />
+                            </span>
+                          </div>
                         </div>
-                      </div>
-                    </a>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Fade>
             );
           }
         })}
