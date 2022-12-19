@@ -3,24 +3,15 @@ import { header } from "../database";
 import Navbar from "./Nav/Navbar";
 
 const Header = () => {
-  const { homepage, title, email } = header;
-  if (!header.email) return null;
+  const { homepage, title } = header;
 
   return (
-    <header id="header" className="flex justify-evenly items-center pt-8 container mx-auto sticky">
-      <h3 className=" font-extrabold text-2xl ml-16 hover-l-animation dark:hover-d-animation w-min-content">{homepage ? <a href={homepage}>{title}</a> : title}</h3>
+    <header id="header" className="flex flex-col md:flex-row md:justify-evenly lg:justify-between xl:justify-arround items-start md:items-center pt-8 gap-6 md:gap-0 container mx-auto relative sm:sticky -mb-24 md:mb-0">
+      <h3 className="font-extrabold text-2xl ml-6 sm:ml-16 md:ml-0 lg:ml-16 hover-l-animation dark:hover-d-animation w-min-content">{homepage ? <a href={homepage}>{title}</a> : title}</h3>
 
-      <div className="ml-36 flex justify-center font-bold uppercase ">
+      <div className="sm:ml-10 md:ml-0 lg:mr-16  font-bold uppercase ">
         <Navbar />
       </div>
-
-      <a href={`mailto:${header.email}`}>
-        <div className="hover-l-button1 dark:hover-d-button1">
-          <div type="button" className="py-3 px-8 font-bold uppercase border dark:border-2 rounded-lg text-black dark:text-white hover:text-white dark:md:hover:text-black border-primaryColor dark:border-secondaryColor">
-            Hire Me
-          </div>
-        </div>
-      </a>
     </header>
   );
 };

@@ -24,7 +24,7 @@ const Service = () => {
 
       <Fade top>
         <div className="w-4/12 rounded-lg w-[350px] p-12 bg-white dark:bg-itemColor my-12 card-animation">
-          <FontAwesomeIcon icon={faMobileScreen} className="border-2 border-black dark:border-white p-2 rounded-full" />
+          <FontAwesomeIcon icon={faMobileScreen} className="border-2 border-black dark:border-white py-2 px-3 rounded-full" />
           <h4 className="font-bold text-2xl my-3">Responsive Design</h4>
           <p>A responsive design makes your website accessible to all users, regaldless of their device.</p>
         </div>

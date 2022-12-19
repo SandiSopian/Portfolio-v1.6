@@ -19,12 +19,12 @@ const Home = () => {
     <>
       <Layout>
         {/* Section Home */}
-        <section id="home" className="flex flex-col items-center text-center -mt-28 leading-loose bg-bghomew dark:bg-bghomed bg-cover pb-96">
+        <section id="home" className="flex flex-col items-center text-center md:-mt-28 leading-loose bg-bghomew dark:bg-bghomed bg-cover pb-96">
           <div className="container mx-auto mt-10 overflow-hidden">
             {/* Name */}
             {name && (
               <RubberBand>
-                <h1 className="text-6xl font-bold mt-40">
+                <h1 className="text-6xl font-bold mt-40 ">
                   Hi, I am <span className="text-primaryColor dark:text-secondaryColor">{name}.</span>
                 </h1>
               </RubberBand>

@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="opacity-50 border border-itemColor w-[1217px] mx-auto mb-24 mt-32"></div>
 
       <div className="flex flex-col items-center">
-        <h2 className="font-bold text-5xl">SS.</h2>
-        <h3 className="font-semibold text-2xl mt-12">Living, learning, & leveling up one day at a time.</h3>
+        <h2 className="font-bold text-3xl">SS.</h2>
+        <h3 className="font-semibold text-xl mt-12">Living, learning, & leveling up one day at a time.</h3>
 
         {social && (
           <>
@@ -20,35 +20,35 @@ const Footer = () => {
               <li>
                 {social.linkedin && (
                   <a href={social.linkedin}>
-                    <FontAwesomeIcon icon={faLinkedinIn} className="text-3xl p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
+                    <FontAwesomeIcon icon={faLinkedinIn} className="text-xl p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
                   </a>
                 )}
               </li>
               <li>
                 {social.behance && (
                   <a href={social.behance}>
-                    <FontAwesomeIcon icon={faBehance} className="text-3xl p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
+                    <FontAwesomeIcon icon={faBehance} className="text-xl p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
                   </a>
                 )}
               </li>
               <li>
                 {social.github && (
                   <a href={social.github}>
-                    <FontAwesomeIcon icon={faGithub} className="text-3xl p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
+                    <FontAwesomeIcon icon={faGithub} className="text-xl p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
                   </a>
                 )}
               </li>
               <li>
                 {social.medium && (
                   <a href={social.medium}>
-                    <FontAwesomeIcon icon={faMedium} className="text-3xl p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
+                    <FontAwesomeIcon icon={faMedium} className="text-xl p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
                   </a>
                 )}
               </li>
               <li>
                 {social.website && (
                   <a href={social.website}>
-                    <FontAwesomeIcon icon={faGlobe} className="text-3xl p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
+                    <FontAwesomeIcon icon={faGlobe} className="text-xl p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
                   </a>
                 )}
               </li>

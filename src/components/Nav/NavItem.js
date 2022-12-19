@@ -1,35 +1,25 @@
-import { Link } from "react-router-dom";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavItem = () => {
+  let Links = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Portfolio", link: "/portfolio" },
+    { name: "Pricing", link: "/pricing" },
+    { name: "Contact", link: "/contact" },
+  ];
+
   return (
     <nav>
-      <ul className="flex gap-8">
-        <li>
-          <Link to="/">
-            <span className="hover-l-animation dark:hover-d-animation w-min-content">Home</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/about">
-            <span className="hover-l-animation dark:hover-d-animation w-min-content">About</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/portfolio">
-            <span className="hover-l-animation dark:hover-d-animation w-min-content">Portfolio</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/pricing">
-            <span className="hover-l-animation dark:hover-d-animation w-min-content">Pricing</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact">
-            <span className="hover-l-animation dark:hover-d-animation w-min-content">Contact</span>
-          </Link>
-        </li>
+      <ul className="flex gap-4 lg:gap-8 flex flex-col md:flex-row justify-center ">
+        {Links.map((link) => (
+          <li>
+            <Link to={link.link}>
+              <span className="hover-l-animation dark:hover-d-animation w-min-content">{link.name}</span>
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
