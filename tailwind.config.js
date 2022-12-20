@@ -3,7 +3,7 @@
 module.exports = {
   darkMode: "class",
   mode: "jit",
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -23,5 +23,5 @@ module.exports = {
       }),
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

@@ -25,8 +25,8 @@ const Portfolio = () => {
           </h6>
         </Zoom>
 
-        <ul className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 p-8 md:p-2 lg:p-8 xl:p-0 2xl:p-8 gap-8 md:mt-6 xl:mt-16 2xl:mx-12">
-          <Fade bottom>
+        <Fade bottom>
+          <ul className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 p-8 md:p-2 lg:p-8 xl:p-0 2xl:p-8 gap-8 md:mt-6 xl:mt-16 2xl:mx-12">
             {portfolio.map((project) => {
               return (
                 <li key={uniqid()} className="relative group">
@@ -61,8 +61,8 @@ const Portfolio = () => {
                 </li>
               );
             })}
-          </Fade>
-        </ul>
+          </ul>
+        </Fade>
       </section>
     </Layout>
   );

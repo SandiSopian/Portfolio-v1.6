@@ -1,6 +1,7 @@
 import React from "react";
-import { Zoom } from "react-reveal";
-import { PricingCard } from "../Pricing";
+import { Zoom, Fade } from "react-reveal";
+import { PricingCardBasic, PricingCardStandard, PricingCardPremium } from "../Pricing";
+import { Carousel } from "flowbite-react";
 
 const Pricing = () => {
   return (
@@ -14,8 +15,32 @@ const Pricing = () => {
         <h2>I will work according to your choice</h2>
       </Zoom>
 
-      <div className="flex flex-col lg:flex-row justify-center gap-2 lg:gap-6 xl:gap-10 bg-opacity-50 dark:text-white leading-loose ">
-        <PricingCard />
+      <div className="flex justify-center gap-2 lg:gap-6 xl:gap-10 bg-opacity-50 dark:text-white leading-loose ">
+        <Fade left>
+          <div className="hidden lg:block">
+            <PricingCardBasic />
+          </div>
+        </Fade>
+
+        <Fade bottom>
+          <div className="hidden lg:block">
+            <PricingCardStandard />
+          </div>
+        </Fade>
+
+        <Fade right>
+          <div className="hidden lg:block">
+            <PricingCardPremium />
+          </div>
+        </Fade>
+
+        <div className="lg:hidden">
+          <Carousel>
+            <PricingCardBasic />
+            <PricingCardStandard />
+            <PricingCardPremium />
+          </Carousel>
+        </div>
       </div>
     </div>
   );
