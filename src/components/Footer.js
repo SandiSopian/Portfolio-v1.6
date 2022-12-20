@@ -6,7 +6,7 @@ import { faGithub, faLinkedinIn, faBehance, faMedium } from "@fortawesome/free-b
 import { about, header } from "../database";
 
 const Footer = () => {
-  const { homepage, title } = header;
+  const { title } = header;
   const { social } = about;
   return (
     <footer id="footer" className="flex flex-col items-center pt-12 sticky">
