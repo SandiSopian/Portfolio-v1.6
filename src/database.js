@@ -8,7 +8,7 @@ import ProfileImg from "../src/assets/profile.jpg";
 // Header
 export const header = {
   title: "SS.",
-  email: "sandis1@yahoo.com",
+  email: "sandis17@outlook.com",
 };
 
 // Home | About
@@ -18,7 +18,7 @@ export const about = {
   role: "Front End Engineer",
   country: "Indonesia",
   phone: "+6282118338039",
-  email: "sandis1@yahoo.com",
+  email: "sandis17@outlook.com",
   profile: ProfileImg,
   description: "I'm work for developing, plan, UI/UX design, build, and implement the user interface systems of websites, software programs, and web-based applications.",
   longDescription:
@@ -77,5 +77,5 @@ export const portfolio = [
 
 // Pricing
 export const pricing = {
-  email: "sandis1@yahoo.com",
+  email: "sandis17@outlook.com",
 };

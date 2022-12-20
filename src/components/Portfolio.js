@@ -10,7 +10,7 @@ import { Zoom, Fade, Rotate } from "react-reveal";
 const Portfolio = () => {
   const { email } = about;
   if (!portfolio.length) return null;
-  if (!portfolio.length) return null;
+
   return (
     <Layout>
       <section className="container flex flex-col justify-center items-center mx-auto overflow-hidden mt-28 md:mt-12">
