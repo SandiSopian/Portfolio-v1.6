@@ -1,11 +1,8 @@
 import React from "react";
-import { pricing } from "../../database";
-import { Fade, Zoom } from "react-reveal";
+import { Zoom } from "react-reveal";
 import { PricingCard } from "../Pricing";
 
 const Pricing = () => {
-  const { email } = pricing;
-
   return (
     <div className="flex items-center justify-center mt-40 flex-col dark:text-white">
       {/* Pricing Title */}

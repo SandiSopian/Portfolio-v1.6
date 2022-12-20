@@ -14,11 +14,13 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h2 className="font-bold text-3xl">
-        {title && (
-          <Link to="/">
-            <span>{title}</span>
-          </Link>
-        )}
+          {title && (
+            <Link to="/">
+              <span>{title}</span>
+            </Link>
+          )}
+        </h2>
+
         <h3 className="w-[300px] sm:w-full mx-auto text-center font-semibold md:text-xl mt-12 break-words">Living, learning, & leveling up one day at a time.</h3>
 
         {social && (

@@ -2,6 +2,7 @@ import ProjImg1 from "../src/assets/project1.jpg";
 import ProjImg2 from "../src/assets/project2.jpg";
 import ProjImg3 from "../src/assets/project3.jpg";
 import ProjImg4 from "../src/assets/project4.jpg";
+import ProjImg5 from "../src/assets/project5.jpg";
 import ProfileImg from "../src/assets/profile.jpg";
 
 // Header

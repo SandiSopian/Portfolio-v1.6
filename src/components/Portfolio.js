@@ -41,7 +41,7 @@ const Portfolio = () => {
                           <div className="hover-l-animation dark:hover-d-animation">
                             <div type="button" className=" text-black dark:text-white hover:text-primaryColor dark:md:hover:text-secondaryColor ">
                               <span>
-                                <FontAwesomeIcon icon={faGithub} className="p-3 shadow-md" />
+                                <FontAwesomeIcon icon={faGithub} className="p-3 shadow-md cursor-pointer" />
                               </span>
                             </div>
                           </div>
@@ -50,7 +50,7 @@ const Portfolio = () => {
                           <div className="hover-l-animation dark:hover-d-animation">
                             <div type="button" className=" text-black dark:text-white hover:text-primaryColor  dark:md:hover:text-secondaryColor ">
                               <span>
-                                <FontAwesomeIcon icon={faUpRightFromSquare} className="p-3 shadow-md" />
+                                <FontAwesomeIcon icon={faUpRightFromSquare} className="p-3 shadow-md cursor-pointer" />
                               </span>
                             </div>
                           </div>
