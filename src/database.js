@@ -1,11 +1,11 @@
 import ProjImg1 from "../src/assets/project1.jpg";
 import ProjImg2 from "../src/assets/project2.jpg";
 import ProjImg3 from "../src/assets/project3.jpg";
+import ProjImg4 from "../src/assets/project4.jpg";
 import ProfileImg from "../src/assets/profile.jpg";
 
 // Header
 export const header = {
-  homepage: "http://sandiss1.skom.id/",
   title: "SS.",
   email: "sandis1@yahoo.com",
 };
@@ -41,31 +41,36 @@ export const portfolio = [
     title: "Landing Page",
     description: "I'm build simple Landing Pages for selling meats of cow and chickens",
     image: ProjImg1,
-    url: "",
+    sourceCode: "https://github.com/SandiSopian/Landing-Page_Dagangan",
+    livePreview: "https://jongko-daging-mang-umis.vercel.app/",
   },
   {
     title: "Landing Page",
-    description: "I'm build simple Landing Pages for selling meats of cow and chickens",
+    description: "I'm slicing my own figma design for e-commerce - Venendria plants shop",
     image: ProjImg2,
-    url: "",
+    sourceCode: "https://github.com/SandiSopian/Figma-to-NextJs-Tailwind---Slicing-1",
+    livePreview: "https://figma-to-next-js-tailwind-slicing-ver-1.vercel.app/",
   },
   {
     title: "Landing Page",
-    description: "I'm build simple Landing Pages for selling meats of cow and chickens",
+    description: "I'm slicing my own figma design for bussiness landing page - Sarang Coffee cafe",
     image: ProjImg3,
-    url: "",
+    sourceCode: "https://github.com/SandiSopian/Figma-to-NextJs-Tailwind---Slicing-2",
+    livePreview: "https://figma-to-next-js-tailwind-slicing-sarang-coffee-cafe.vercel.app/",
   },
   {
     title: "Landing Page",
-    description: "I'm build simple Landing Pages for selling meats of cow and chickens",
-    image: ProjImg3,
-    url: "",
+    description: "I'm slicing my own figma design for bussiness landing page - Tara Trip Gallery",
+    image: ProjImg4,
+    sourceCode: "https://github.com/SandiSopian/Figma-to-NextJs-Tailwind---Slicing-3",
+    livePreview: "https://figma-to-next-js-tailwind-slicing-tara-trip-gallery.vercel.app/",
   },
   {
     title: "Landing Page",
-    description: "I'm build simple Landing Pages for selling meats of cow and chickens",
-    image: ProjImg3,
-    url: "",
+    description: "I'm slicing my own figma design for website invitation",
+    image: ProjImg5,
+    sourceCode: "https://github.com/SandiSopian/Figma-to-ReactJs-Tailwind---Slicing-4",
+    livePreview: "https://figma-to-react-js-tailwind-slicing-wedding-invitation-website.vercel.app/",
   },
 ];
 

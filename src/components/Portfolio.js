@@ -37,7 +37,7 @@ const Portfolio = () => {
                       <h4 className="font-semibold mb-10 mx-auto w-[200px] sm:w-[350px]">{project.description}</h4>
 
                       <div className="flex flex-row gap-6 justify-center items-center text-center sticky">
-                        <a href={project.url}>
+                        <a href={project.github}>
                           <div className="hover-l-animation dark:hover-d-animation">
                             <div type="button" className=" text-black dark:text-white hover:text-primaryColor dark:md:hover:text-secondaryColor ">
                               <span>
@@ -46,7 +46,7 @@ const Portfolio = () => {
                             </div>
                           </div>
                         </a>
-                        <a href={project.url}>
+                        <a href={project.web}>
                           <div className="hover-l-animation dark:hover-d-animation">
                             <div type="button" className=" text-black dark:text-white hover:text-primaryColor  dark:md:hover:text-secondaryColor ">
                               <span>

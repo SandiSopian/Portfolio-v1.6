@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn, faBehance, faMedium } from "@fortawesome/free-brands-svg-icons";
@@ -12,7 +13,12 @@ const Footer = () => {
       <div className="opacity-50 border border-itemColor w-[280px] sm:w-[500px] lg:w-[800px] xl:w-[1217px] mx-auto mb-12 md:mb-24 mt-32"></div>
 
       <div className="flex flex-col items-center">
-        <h2 className="font-bold text-3xl">{homepage ? <a href={homepage}>{title}</a> : title}</h2>
+        <h2 className="font-bold text-3xl">
+        {title && (
+          <Link to="/">
+            <span>{title}</span>
+          </Link>
+        )}
         <h3 className="w-[300px] sm:w-full mx-auto text-center font-semibold md:text-xl mt-12 break-words">Living, learning, & leveling up one day at a time.</h3>
 
         {social && (
