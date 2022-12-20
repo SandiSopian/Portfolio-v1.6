@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import uniqid from "uniqid";
 import { portfolio, about } from "../../database";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,14 +18,14 @@ const Portfolio = () => {
       </Zoom>
 
       <Zoom>
-        <h6>
+        <h6 className="text-center">
           Here are a few past design projects I've worked on. Want to see more?
           <span className="hover:font-bold">{email && <a href={`mailto:${email}`}>Email me.</a>}</span>
         </h6>
       </Zoom>
 
       {/* Portfolio Card */}
-      <div className="flex gap-4 mt-10">
+      <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 mt-10">
         {portfolio.map((project, index) => {
           if (index < 3) {
             return (
@@ -33,10 +34,10 @@ const Portfolio = () => {
                   <img src={project.image} className="rounded-3xl" />
                   <div className="portfolioCard-animation delay-450">
                     <div className="sticky">
-                      <div className="mb-10 w-[350px]">{project.description}</div>
+                      <div className="mb-10 w-[200px] sm:w-[350px] lg:w-[200px] xl:w-[350px]">{project.description}</div>
                       <a href={project.url}>
                         <div className="hover-l-button1 dark:hover-d-button1">
-                          <div className="border-2 border-primaryColor dark:border-secondaryColor text-black hover:text-white dark:text-white dark:md:hover:text-black  rounded-lg py-4 ">
+                          <div className="border-2 border-primaryColor dark:border-secondaryColor text-black hover:text-white dark:text-white dark:md:hover:text-black rounded-lg py-4 ">
                             Visit Website
                             <span>
                               <FontAwesomeIcon icon={faAngleRight} className="ml-2" />
@@ -54,13 +55,13 @@ const Portfolio = () => {
       </div>
 
       <div className="sticky">
-        <a href="">
+        <Link to="/portfolio">
           <div className="hover-l-button2 dark:hover-d-button2">
-            <div type="button" className="border dark:border-4 border-primaryColor border-secondaryColor p-4 mt-16 py-3 px-12 font-bold text-3xl text-primaryColor dark:text-white hover:text-white dark:md:hover:text-black ">
+            <div type="button" className="border dark:border-4 border-primaryColor border-secondaryColor p-4 mt-16 py-3 px-12 font-bold text-xl text-primaryColor dark:text-white hover:text-white dark:md:hover:text-black ">
               See More
             </div>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

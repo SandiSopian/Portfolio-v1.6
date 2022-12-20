@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import uniqid from "uniqid";
 
 const NavItem = () => {
   let Links = [
@@ -14,7 +15,7 @@ const NavItem = () => {
     <nav>
       <ul className="flex gap-4 lg:gap-8 flex flex-col md:flex-row justify-center ">
         {Links.map((link) => (
-          <li>
+          <li key={uniqid()}>
             <Link to={link.link}>
               <span className="hover-l-animation dark:hover-d-animation w-min-content">{link.name}</span>
             </Link>

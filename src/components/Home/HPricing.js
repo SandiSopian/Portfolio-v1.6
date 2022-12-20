@@ -17,7 +17,7 @@ const Pricing = () => {
         <h2>I will work according to your choice</h2>
       </Zoom>
 
-      <div className="flex justify-center gap-10 bg-opacity-50 dark:text-white leading-loose ">
+      <div className="flex flex-col lg:flex-row justify-center gap-2 lg:gap-6 xl:gap-10 bg-opacity-50 dark:text-white leading-loose ">
         <PricingCard />
       </div>
     </div>

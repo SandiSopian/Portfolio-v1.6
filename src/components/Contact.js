@@ -23,13 +23,13 @@ const Contact = () => {
 
   return (
     <Layout>
-      <section className="container flex flex-col justify-center items-center mx-auto overflow-hidden mt-12">
+      <section className="container flex flex-col justify-center items-center mx-auto overflow-hidden mt-28 md:mt-12">
         <Rotate top left cascade>
-          <h1 className="font-bold text-4xl my-3">Contact</h1>
+          <h1 className="w-[300px] sm:w-full font-bold text-center text-2xl md:text-3xl lg:text-4xl my-3">Contact</h1>
         </Rotate>
 
         <Zoom>
-          <h2>Have a question? Please enquire below</h2>
+          <h2 className="w-[300px] sm:w-[500px] md:w-full text-center">Have a question? Please enquire below</h2>
         </Zoom>
 
         <div className="container mt-12 flex flex-col mx-auto justify-center items-center">
@@ -40,7 +40,15 @@ const Contact = () => {
                 Name*
               </label>
               <div>
-                <input maxLength={50} type="text" id="user_name" name="user_name" required className="bg-slate-100 dark:md:text-black  dark:md:text-black border-2 p-2 mb-8 w-[600px] h-[60px] rounded-lg" placeholder="Enter Full Name" />
+                <input
+                  maxLength={50}
+                  type="text"
+                  id="user_name"
+                  name="user_name"
+                  required
+                  className="bg-slate-100 dark:md:text-black  dark:md:text-black border-2 p-2 mb-8 w-[300px] sm:w-[500px] md:w-[600px] h-[60px] rounded-lg"
+                  placeholder="Enter Full Name"
+                />
               </div>
 
               {/* Input Email */}
@@ -48,7 +56,15 @@ const Contact = () => {
                 Email*
               </label>
               <div>
-                <input maxLength={70} type="email" id="user_email" name="user_email" required className="bg-slate-100 dark:md:text-black  border-2 p-2 mb-8 w-[600px] h-[60px] rounded-lg" placeholder="Email Address" />
+                <input
+                  maxLength={70}
+                  type="email"
+                  id="user_email"
+                  name="user_email"
+                  required
+                  className="bg-slate-100 dark:md:text-black  border-2 p-2 mb-8 w-[300px] sm:w-[500px] md:w-[600px] h-[60px] rounded-lg"
+                  placeholder="Email Address"
+                />
               </div>
 
               {/* Input Phone */}
@@ -62,7 +78,7 @@ const Contact = () => {
                   id="user_phone"
                   name="user_phone"
                   pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
-                  className="bg-slate-100 dark:md:text-black  border-2 p-2 w-[600px] h-[60px] rounded-lg"
+                  className="bg-slate-100 dark:md:text-black  border-2 p-2 w-[300px] sm:w-[500px] md:w-[600px] h-[60px] rounded-lg"
                   placeholder="Phone Number (optional)"
                 />
                 <div className="mb-8">
@@ -75,7 +91,14 @@ const Contact = () => {
                 Website
               </label>
               <div>
-                <input maxLength={70} type="url" id="user_website" name="user_website" className="bg-slate-100 dark:md:text-black  border-2 p-2 mb-8 w-[600px] h-[60px] rounded-lg" placeholder="Website (optional)" />
+                <input
+                  maxLength={70}
+                  type="url"
+                  id="user_website"
+                  name="user_website"
+                  className="bg-slate-100 dark:md:text-black  border-2 p-2 mb-8 w-[300px] sm:w-[500px] md:w-[600px] h-[60px] rounded-lg"
+                  placeholder="Website (optional)"
+                />
               </div>
 
               {/* Input Message */}
@@ -89,20 +112,20 @@ const Contact = () => {
                   id="message"
                   name="message"
                   required
-                  className="bg-slate-100 dark:md:text-black  border-2 p-2 w-[600px] h-[300px] rounded-lg placeholder:justify-start placeholder:top-0"
+                  className="bg-slate-100 dark:md:text-black  border-2 p-2 w-[300px] sm:w-[500px] md:w-[600px] h-[300px] rounded-lg placeholder:justify-start placeholder:top-0"
                   placeholder="Input Message"
                 ></textarea>
               </div>
 
               {/* Submit */}
-              <div className="sticky flex items-center justify-center ">
+              <div className="sticky flex items-center justify-center">
                 <div className="p-4 mt-16 rounded-full ">
                   <div className="hover-l-button1 dark:hover-d-button1">
                     <input
                       type="submit"
                       id="button"
                       value="Enquire"
-                      className="border dark:border-2 inset-0 border-primaryColor dark:border-secondaryColor rounded-lg py-6 px-20 font-bold text-2xl text-black dark:text-white hover:text-white dark:md:hover:text-black hover:cursor-pointer"
+                      className="border dark:border-2 inset-0 border-primaryColor dark:border-secondaryColor rounded-lg py-6 px-12 xl:px-20 font-bold text-2xl text-black dark:text-white hover:text-white dark:md:hover:text-black hover:cursor-pointer"
                     />
                   </div>
                 </div>

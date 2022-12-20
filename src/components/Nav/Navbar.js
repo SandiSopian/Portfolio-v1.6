@@ -14,12 +14,12 @@ const Navbar = () => {
 
   return (
     <div className="flex flex-col md:flex-row">
-      <div className={`flex flex-col ml-6 md:ml-0 md:flex-row gap-8 md:gap-1 md:items-center transition-all duration-500 ease-out ${open ? "-mt-96 md:mt-0" : "mt-0"} `}>
+      <div className={`flex flex-col ml-6 md:ml-0 md:flex-row gap-8 md:gap-1 md:items-center transition-all duration-500 ease-out ${!open ? "-mt-96 md:mt-0" : "mt-0"} `}>
         <div className="xl:mr-56 2xl:mr-96">
           <NavItem />
         </div>
 
-        <div className="ml-6 md:mr-2 xl:mr-28 2xl:mr-64 absolute top-8 md:top-11 right-20 md:right-48 lg:right-60 ">
+        <div className="ml-6 md:mr-2 xl:mr-28 2xl:mr-64 absolute top-8 md:top-11 right-20 md:right-48 lg:right-80 xl:right-60">
           <Switcher />
         </div>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
 
       <div onClick={() => setOpen(!open)} className="md:hidden absolute top-8 right-10 hover:cursor-pointer">
-        <FontAwesomeIcon onClick={() => setIsClicked((prev) => !prev)} icon={isClicked ? faBars : faXmark} className="text-2xl hover-l-animation dark:hover-d-animation " />
+        <FontAwesomeIcon onClick={() => setIsClicked((prev) => !prev)} icon={isClicked ? faXmark : faBars} className="text-2xl hover-l-animation dark:hover-d-animation " />
       </div>
     </div>
   );

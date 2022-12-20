@@ -10,7 +10,7 @@ const Skills = () => {
         <h2 className="font-bold text-4xl mb-6">SKILLS</h2>
       </Zoom>
       <Zoom>
-        <ul className="w-[450px] flex flex-wrap justify-center gap-2 mx-auto">
+        <ul className="w-[350px] sm:w-[450px] flex flex-wrap justify-center gap-2 mx-auto">
           {skills.map((skill) => (
             <li key={uniqid()} className="p-4 border card-animation">
               {skill}
