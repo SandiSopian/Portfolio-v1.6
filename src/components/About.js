@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "./Layout";
 import { about } from "../database";
 import { Slide, Fade } from "react-reveal";
 
 const About = () => {
   const { name, role, country, phone, email, longDescription, profile } = about;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       <section className="container flex flex-col lg:flex-row mx-auto 2xl:mx-auto overflow-hidden mt-28 md:mt-12">
@@ -16,7 +21,7 @@ const About = () => {
               <h4 className="font-semibold text-xl lg:text-2xl my-2">
                 {role}
                 <span className="m-2">|</span>
-                <span className="font-semibold text-xl lg:text-2xl text-[#ff0000]">{country && <strong>{country}</strong>}</span>
+                <span className="font-extrabold text-xl lg:text-2xl text-transparent bg-clip-text bg-gradient-to-b from-[#ff0000] to-white ">{country && <strong>{country}</strong>}</span>
               </h4>
             )}
 
@@ -26,12 +31,12 @@ const About = () => {
 
             <div className="w-[260px] sm:w-[450px] md:w-[600px] lg:w-[450px] xl:w-[550px] 2xl:w-[650px] opacity-50 border border-itemColor my-5"></div>
 
-            {longDescription && <p className="w-[300px] sm:w-[450px] md:w-[600px] lg:w-[450px] xl:w-[550px] 2xl:w-[650px] text-justify break-word">{longDescription}</p>}
+            {longDescription && <article className="w-[300px] sm:w-[450px] md:w-[600px] lg:w-[450px] xl:w-[550px] 2xl:w-[650px] text-justify break-word">{longDescription}</article>}
           </div>
         </Fade>
 
         <Slide right>
-          <div className="lg:w-6/12 order-1 lg:order-2 ">{profile && <img src={profile} alt="" className="sm:w-[80%] lg:w-[90%] p-6 lg:p-0 lg:rounded-bl-3xl lg:rounded-tl-3xl mx-auto lg:mx-0" />}</div>
+          <div className="lg:w-6/12 order-1 lg:order-2 ">{profile && <img src={profile} alt="Profile Image" className="sm:w-[80%] lg:w-[90%] p-6 lg:p-0 lg:rounded-bl-3xl lg:rounded-tl-3xl mx-auto lg:mx-0" />}</div>
         </Slide>
       </section>
     </Layout>

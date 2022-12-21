@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
 
         <div className={`sticky md:ml-20 lg:ml-28 xl:ml-0 ${open ? "mb-28 md:mb-0" : "mb-28 md:mb-0"}`}>
-          <a href={`mailto:${header.email}`}>
+          <a href={`mailto:${header.email}`} alt="Email Address">
             <div className="hover-l-button1 dark:hover-d-button1 ">
               <div type="button" className="py-3 px-8 font-bold uppercase border dark:border-2 rounded-lg text-black dark:text-white hover:text-white dark:md:hover:text-black border-primaryColor dark:border-secondaryColor">
                 Hire Me

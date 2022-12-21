@@ -14,7 +14,7 @@ const Portfolio = () => {
     <div className="flex items-center justify-center flex-col dark:text-white">
       {/* Portfolio Title */}
       <Zoom left cascade>
-        <h2 className="font-bold text-4xl my-3">PORTFOLIO</h2>
+        <h2 className="font-bold text-3xl xl:text-4xl my-3">PORTFOLIO</h2>
       </Zoom>
 
       <Zoom>
@@ -31,13 +31,13 @@ const Portfolio = () => {
             return (
               <Fade>
                 <div key={uniqid()} className="relative group">
-                  <img src={project.image} className="rounded-3xl" />
+                  <img src={project.image} alt="Project Image" className="rounded-3xl" />
                   <div className="portfolioCard-animation delay-450">
                     <div className="sticky">
                       <div className="mb-10 w-[200px] sm:w-[350px] lg:w-[200px] xl:w-[350px]">{project.description}</div>
-                      <a href={project.url}>
+                      <a href={project.livePreview} alt="Live Preview">
                         <div className="hover-l-button1 dark:hover-d-button1">
-                          <div className="border-2 border-primaryColor dark:border-secondaryColor text-black hover:text-white dark:text-white dark:md:hover:text-black rounded-lg py-4 ">
+                          <div className="border-2 border-primaryColor dark:border-secondaryColor text-black hover:text-white dark:text-white dark:md:hover:text-black rounded-lg py-4 hover:cursor-pointer">
                             Visit Website
                             <span>
                               <FontAwesomeIcon icon={faAngleRight} className="ml-2" />

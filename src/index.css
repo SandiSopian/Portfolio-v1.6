@@ -40,7 +40,7 @@
   }
 
   .card-animation {
-    @apply transition duration-150 ease-in-out shadow-md transform hover:-translate-y-1 hover:cursor-pointer;
+    @apply transition duration-150 ease-in-out transform hover:-translate-y-1 hover:cursor-pointer;
   }
 
   .portfolioCard-animation {

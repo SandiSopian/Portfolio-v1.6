@@ -28,35 +28,35 @@ const Footer = () => {
             <ul className="flex gap-4 sm:p-6 lg:gap-10 xl:gap-20 my-8 md:my-16">
               <li>
                 {social.linkedin && (
-                  <a href={social.linkedin}>
+                  <a href={social.linkedin} alt="Linkedin">
                     <FontAwesomeIcon icon={faLinkedinIn} className="sm:text-xl p-4 sm:p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
                   </a>
                 )}
               </li>
               <li>
                 {social.behance && (
-                  <a href={social.behance}>
+                  <a href={social.behance} alt="Behance">
                     <FontAwesomeIcon icon={faBehance} className="sm:text-xl p-4 sm:p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
                   </a>
                 )}
               </li>
               <li>
                 {social.github && (
-                  <a href={social.github}>
+                  <a href={social.github} alt="Github">
                     <FontAwesomeIcon icon={faGithub} className="sm:text-xl p-4 sm:p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
                   </a>
                 )}
               </li>
               <li>
                 {social.medium && (
-                  <a href={social.medium}>
+                  <a href={social.medium} alt="Medium">
                     <FontAwesomeIcon icon={faMedium} className="sm:text-xl p-4 sm:p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
                   </a>
                 )}
               </li>
               <li>
                 {social.website && (
-                  <a href={social.website}>
+                  <a href={social.website} alt="Blog">
                     <FontAwesomeIcon icon={faGlobe} className="sm:text-xl p-4 sm:p-6 border border-black dark:border-black dark:bg-itemColor rounded-full hover-l-animation dark:hover-d-animation " />
                   </a>
                 )}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../Layout";
 import { Link } from "react-router-dom";
 import { about } from "../../database";
@@ -15,6 +15,10 @@ import Shake from "react-reveal/Shake";
 
 const Home = () => {
   const { name, role, description } = about;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -39,7 +43,7 @@ const Home = () => {
 
             {/* Scroll down */}
             <div className="mt-10">
-              <a href="#service">
+              <a href="#service" alt="Scroll Down Icon">
                 <FontAwesomeIcon icon={faArrowDown} className="border-2 border-black dark:border-white p-2 rounded-full animate-bounce" />
               </a>
             </div>
