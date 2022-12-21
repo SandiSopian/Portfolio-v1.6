@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 * {
-  @apply transition-colors duration-700 scroll-smooth;
+  @apply transition-colors duration-300 scroll-smooth;
 }
 
 /* Animation for hover elements */

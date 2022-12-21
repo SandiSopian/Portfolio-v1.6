@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 
 const Service = () => {
   return (
-    <div className="flex flex-col lg:flex-row mx-10 px-10 bg-[#737373] lg:gap-10 bg-opacity-50 dark:text-white leading-loose">
+    <div className="flex flex-col lg:flex-row mx-10 px-7 sm:px-12 lg:px-10 xl:px-16 bg-[#737373] lg:gap-10 bg-opacity-50 dark:text-white leading-loose">
       <div className="card-animation">
         <Fade bottom>
           <div className="w-[300px] sm:w-[450px] lg:w-[260px] xl:w-[350px] rounded-lg p-12 lg:py-6 lg:px-4 xl:p-12 bg-white dark:bg-itemColor mt-10 lg:my-12 hover:card-animation">
