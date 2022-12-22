@@ -15,19 +15,19 @@ const About = () => {
       <section className="container flex flex-col lg:flex-row mx-auto 2xl:mx-auto overflow-hidden mt-28 md:mt-12">
         <Fade left>
           <div className="lg:w-6/12 flex flex-col items-center lg:items-start order-2 lg:order-1 lg:ml-16">
-            {name && <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl mt-8 xl:my-16">{name}</h2>}
+            {name && <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl mt-8 xl:my-16">{name}</h1>}
 
             {role && (
-              <h4 className="font-semibold text-xl lg:text-2xl my-2">
+              <h2 className="font-semibold text-xl lg:text-2xl my-2">
                 {role}
                 <span className="m-2">|</span>
                 <span className="font-extrabold text-xl lg:text-2xl text-transparent bg-clip-text bg-gradient-to-b from-[#ff0000] to-white ">{country && <strong>{country}</strong>}</span>
-              </h4>
+              </h2>
             )}
 
-            {phone && <h4 className="text-2x lg:my-2">{phone}</h4>}
+            {phone && <h3 className="text-2x lg:my-2">{phone}</h3>}
 
-            {email && <h4 className="text-[#E0B20F]">{email}</h4>}
+            {email && <h3 className="text-[#E0B20F]">{email}</h3>}
 
             <div className="w-[260px] sm:w-[450px] md:w-[600px] lg:w-[450px] xl:w-[550px] 2xl:w-[650px] opacity-50 border border-itemColor my-5"></div>
 

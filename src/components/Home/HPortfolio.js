@@ -14,14 +14,14 @@ const Portfolio = () => {
     <div className="flex items-center justify-center flex-col dark:text-white">
       {/* Portfolio Title */}
       <Zoom left cascade>
-        <h2 className="font-bold text-3xl xl:text-4xl my-3">PORTFOLIO</h2>
+        <h1 className="font-bold text-3xl xl:text-4xl my-3">PORTFOLIO</h1>
       </Zoom>
 
       <Zoom>
-        <h6 className="text-center">
+        <h2 className="text-center">
           Here are a few past design projects I've worked on. Want to see more?
           <span className="hover:font-bold">{email && <a href={`mailto:${email}`}>Email me.</a>}</span>
-        </h6>
+        </h2>
       </Zoom>
 
       {/* Portfolio Card */}

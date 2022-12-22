@@ -24,10 +24,10 @@ const Portfolio = () => {
         </Rotate>
 
         <Zoom>
-          <h6 className="w-[300px] sm:w-[500px] md:w-full text-center">
+          <h2 className="w-[300px] sm:w-[500px] md:w-full text-center">
             Here are a few past design projects I've worked on. Want to see more?
             <span className="hover:font-bold">{email && <a href={`mailto:${email}`}>Email me.</a>}</span>
-          </h6>
+          </h2>
         </Zoom>
 
         <Fade bottom>
